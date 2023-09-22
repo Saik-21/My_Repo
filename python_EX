@@ -5,4 +5,13 @@ while n>=0:
         print('*',end='')
     n-=1
     print('\n',end='')
+#Right Triangle Pattern
+n = 5
+i = 0 
+while i<=n:
+    for j in range(i):
+        print('*',end='')
+    print('\n',end='')
+    i+=1
+
     
