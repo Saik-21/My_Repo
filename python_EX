@@ -1,1 +1,7 @@
-print("Hello World")
+#Recursion:- Sum of multiplication
+def multi_sum(n):
+    total = 0
+    for i in range(1,11):
+       total+=n*i 
+    return total
+print(multi_sum(6))
