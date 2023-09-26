@@ -1,17 +1,1 @@
-#Upside Down Right Triangle
-n = 5
-while n>=0:
-    for i in range(n):
-        print('*',end='')
-    n-=1
-    print('\n',end='')
-#Right Triangle Pattern
-n = 5
-i = 0 
-while i<=n:
-    for j in range(i):
-        print('*',end='')
-    print('\n',end='')
-    i+=1
-
-    
+print("Hello World")
