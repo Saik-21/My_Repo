@@ -1,17 +1,26 @@
-#Recursion:- Sum of multiplication
+'''#Recursion:- Sum of multiplication
 def multi_sum(n):
     total = 0
     for i in range(1,11):
        total+=n*i 
-    return total
+    return total'''
 
 
-# Prime number function
+''' Prime number function
 def check_prime(n):
    prime = 0
    for i in range(100):
       if n%i==0:
          continue
       else:
-         prime = n
+         prime = n '''
+
+
+#Function 
+def test(word):
+   
+   return word + ' is a string'
+print(test('this'))
+
+
 
