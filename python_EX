@@ -41,17 +41,34 @@ for i in range(n):
          i-=1
          print('\n',end='')'''
 
-#Pyramid
-n = int(input("Enter the number: "))
+#Pyramid pattern
+n = int(input("Enter the number:"))
 for i in range(n):
    k = 2*i+1
    for j in range(n+1):
       if j<n-i:
          print(' ',end='')
-
-   for l in range(k):
-            print('*',end='')
+   for r in range(k):
+      print('*',end='')
    print('\n',end='')
+
+      
+
+
+
+'''#Inverted Pyramid
+n = int(input("Enter the number:"))
+for i in range(n):
+   k = 2*n-1
+   for j in range(i):
+      print(' ',end='')
+   for t in range(k):
+      print('*',end='')
+   print('\n',end='')
+   n-=1  '''
+
+
+
 
 
 
