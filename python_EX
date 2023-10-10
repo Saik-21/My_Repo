@@ -6,7 +6,7 @@ def multi_sum(n):
     return total '''
 
 
-# Prime number functions
+'''# Prime number functions
 def check_prime(n):
    prime = 0
    for i in range(2,n):
@@ -15,6 +15,35 @@ def check_prime(n):
          continue
       else:
          return "It is a prime number"
-print(check_prime(12))
-         
+print(check_prime(12))'''
 
+'''def create_arr(n):
+   number =  []
+   for i in range(n):
+      number.append(i+1)
+   return number        
+
+print(create_arr(5)[1])'''
+
+#Check if one array is important than the other one
+list_1 = [1,2,3,4]
+list_2 = [0,6]
+list = [ ]
+def extreme(list):
+   max = 0
+   min = list[0]
+   for i in range(len(list)):
+      if list[i]>max:
+         max = list[i]
+      elif min>list[i]:
+         min = list[i]
+   return max,min
+
+max_1 = extreme(list_1)[0]
+max_2 = extreme(list_2)[0]
+min_1 = extreme(list_1)[1]
+min_2 = extreme(list_2)[1]
+if max_1<max_2 and min_1>min_2:
+   print(True)
+else:
+   print(False) 
