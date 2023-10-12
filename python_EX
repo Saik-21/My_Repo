@@ -3,6 +3,7 @@ def multi_sum(n):
     total = 0
     for i in range(1,11):
        total+=n*i 
+<<<<<<< HEAD
     return total '''
 
 
@@ -47,3 +48,17 @@ if max_1<max_2 and min_1>min_2:
    print(True)
 else:
    print(False) 
+=======
+    return total
+
+
+# Prime number function
+def check_prime(n):
+   prime = 0
+   for i in range(100):
+      if n%i==0:
+         continue
+      else:
+         prime = n
+
+>>>>>>> 2ed5fbacb90fc0c7635400db546f38d56e4f73bd
