@@ -16,11 +16,14 @@ def check_prime(n):
          prime = n '''
 
 
-#Function 
-def test(word):
-   
-   return word + ' is a string'
-print(test('this'))
+def my_func(msg):
+   def fun():
+      return msg +" "+"world"
+   return fun
+
+t = my_func('Hi') #1.)In the closure function if the return result does not have open paranthesis in it like above example then
+k = my_func('Hello')#2.) we can store it in a variable and that remembers this function and eventually it behaves like a function with 
+print(t()) #3.)having the argument the variable stored like in the line 24 and call as you can see in line 26
 
 
 
