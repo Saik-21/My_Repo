@@ -16,3 +16,19 @@ mul_log(3,3)
 mul_log(7,2)
 sub_log(6,5)''' #This is a  n example of closure
 
+
+'''def describe(func):
+    def present(*args):
+        print(f"the binary representation of function: {bin(*args)}")
+        func(*args)
+        print(f"the binary representation of function: {bin(func(*args))}")
+    return present
+
+@describe
+def stat(x):
+    x  = x << 2
+    print(f"operation shift:{x}")
+    return x
+
+stat(6)'''
+
