@@ -67,6 +67,16 @@ for i in range(n):
    print('\n',end='')
    n-=1  '''
 
+'''def find_highest(l):
+    if len(l)==1:
+        return l[0]
+    else:
+        if l[1]>l[0]:
+            l.pop(0)
+        else:
+            l.pop(1)
+    return find_highest(l)'''
+
 
 
 
