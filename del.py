@@ -8,3 +8,17 @@ def bubble_sort(n):
 
 l = [6,9,1,4,5]
 print(bubble_sort(l))
+
+#Insertion Sort
+def insertion_sort(n):
+    for i in range(1,len(n)):
+        for j in range(i-1,0,-1):
+            if n[j]>n[j+1]:
+                n[j],n[j+1] = n[j+1],n[j]
+            else:
+                break
+    return n
+
+
+
+            
