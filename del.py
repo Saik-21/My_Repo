@@ -6,8 +6,6 @@ def bubble_sort(n):
                 n[j],n[j+1] = n[j+1],n[j]
     return n
 
-l = [6,9,1,4,5]
-print(bubble_sort(l))
 
 #Insertion Sort
 def insertion_sort(n):
