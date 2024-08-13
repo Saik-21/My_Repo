@@ -22,7 +22,7 @@ d1 = c1.__dict__
 print(d1)'''
 
 
-def factorial(t):
+'''def factorial(t):
     if t==0:
         return 1
     else:
@@ -62,4 +62,7 @@ t = lambda x,y:x+y
 numbers = [1,2,3,4,5]
 #Here we just get one single result, We need to import the function from the functools library
 sum = reduce(t,numbers)
-print(sum)
+print(sum)'''
+
+
+print(chr(97))
