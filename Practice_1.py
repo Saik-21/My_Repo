@@ -21,4 +21,40 @@ def is_harshad(num):
         return True
     return False
 
+def summer_69(l):
+    total = 0
+    skip = True
 
+    for num in l:
+        while skip:
+            if num!=6:
+                total+=num
+                break
+            else:
+                skip = False
+        while not skip:
+            if num!=9:
+                break
+            else:
+                skip = True
+                break
+    return total
+
+def check_prime(n):
+    if n<=1 or n==2:
+        return False
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    return True
+
+def count_prime(n):
+    count = [2]
+    for i in range(3,n,2):
+        if check_prime(i):
+            count.append(i)
+    print(count)
+    return len(count)
+
+        
+print(count_prime(100))
