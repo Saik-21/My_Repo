@@ -51,10 +51,13 @@ def check_prime(n):
 def count_prime(n):
     count = [2]
     for i in range(3,n,2):
-        if check_prime(i):
+        for j in range(2,i):
+            if i%j==0:
+                break     
+        else:
             count.append(i)
-    print(count)
-    return len(count)
+    return count
+
 
         
 print(count_prime(100))
