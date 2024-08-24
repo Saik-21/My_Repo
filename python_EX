@@ -4,6 +4,7 @@ def multi_sum(n):
     for i in range(1,11):
        total+=n*i 
 <<<<<<< HEAD
+<<<<<<< HEAD
     return total '''
 
 
@@ -62,3 +63,88 @@ def check_prime(n):
          prime = n
 
 >>>>>>> 2ed5fbacb90fc0c7635400db546f38d56e4f73bd
+=======
+    return total '''
+
+
+'''# Prime number functions
+def check_prime(n):
+   prime = 0
+   for i in range(2,n):
+      if n%i==0:
+         return "it is not a prime number"
+         continue
+      else:
+         return "It is a prime number"
+print(check_prime(12)) '''
+
+'''#Right angled Triangle from right Pattern 
+n = int(input("Enter the number: "))
+for i in range(n):
+   for j in range(n+1):
+      if j<n-i:
+         print(' ',end='')
+      else:
+         print('*',end='')
+   print('\n',end='')'''
+
+'''#Right start pattern
+n = int(input("Enter the number: "))
+for i in range(n):
+   if i<n-1:
+      for j in range(i+1):
+         print('*',end='')
+      print('\n',end='')
+   elif i<n:
+      while i+1>0:
+         for j in range(i+1):
+            print('*',end='')
+         i-=1
+         print('\n',end='')'''
+
+#Pyramid pattern
+n = int(input("Enter the number:"))
+for i in range(n):
+   k = 2*i+1
+   for j in range(n+1):
+      if j<n-i:
+         print(' ',end='')
+   for r in range(k):
+      print('*',end='')
+   print('\n',end='')
+
+      
+
+
+
+'''#Inverted Pyramid
+n = int(input("Enter the number:"))
+for i in range(n):
+   k = 2*n-1
+   for j in range(i):
+      print(' ',end='')
+   for t in range(k):
+      print('*',end='')
+   print('\n',end='')
+   n-=1  '''
+
+'''def find_highest(l):
+    if len(l)==1:
+        return l[0]
+    else:
+        if l[1]>l[0]:
+            l.pop(0)
+        else:
+            l.pop(1)
+    return find_highest(l)'''
+
+
+
+
+
+
+   
+
+         
+
+>>>>>>> ba174f78e068897baab10cf56475de413f7b417f
